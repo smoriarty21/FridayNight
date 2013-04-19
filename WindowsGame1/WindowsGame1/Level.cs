@@ -29,7 +29,6 @@ namespace WindowsGame1
         public Level create(Level lvl, int screenWidth, int screenHeight)
         {
 
-            //lvl.backgroundImage = image;
             lvl.bkgHeight = 500;
             lvl.bkgWidth = 900;
             lvl.x = (screenWidth - lvl.bkgWidth) / 2;

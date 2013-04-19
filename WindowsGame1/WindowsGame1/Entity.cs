@@ -11,11 +11,20 @@ namespace WindowsGame1
     class Entity
     {
 
-        public int x, y, xVelocity, Yvelocity, height, width;
+        public int x, y, xVelocity, yVelocity, height, width;
         public string name, texture;
-        public Rectangle rectangle;
+        public Rectangle rectangle, drawRectangle;
         public Boolean visible;
         public Texture2D image;
+        private Random r = new Random();
+        private int randomlygeneratedNumber;
+
+        public int getRandom(int start, int stop)
+        {
+            randomlygeneratedNumber = r.Next(start, stop);
+
+            return randomlygeneratedNumber;
+        }
 
     }
 }
